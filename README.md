@@ -12,12 +12,12 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 ### Requisitos funcionais
 
-- [ ] O orgaizador deve poder cadastrar um novo evento;
-- [ ] O orgaizador deve poder visualizar dados de um evento;
-- [ ] O orgaizador deve poder visualizar a lista de participantes;
-- [ ] O orgaizador deve poder se inscrever em um evento;
-- [ ] O orgaizador deve poder visualizar seu crachá de inscrição
-- [ ] O orgaizador deve poder realizar check-in no evento;
+- [ ] O organizador deve poder cadastrar um novo evento;
+- [ ] O organizador deve poder visualizar dados de um evento;
+- [ ] O organizador deve poder visualizar a lista de participantes;
+- [ ] O organizador deve poder se inscrever em um evento;
+- [ ] O organizador deve poder visualizar seu crachá de inscrição
+- [ ] O organizador deve poder realizar check-in no evento;
 
 ### Regras de negócio
 
