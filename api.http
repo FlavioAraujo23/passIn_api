@@ -1,0 +1,8 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "moodle moot",
+  "details": "Evento sobre o moodle",
+  "maximumAttendees": 100
+}
