@@ -6,3 +6,13 @@ Content-Type: application/json
   "details": "Evento sobre o moodle",
   "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/ccd90b32-e2e4-4416-b38e-a605fa8a0107/attendees
+Content-Type: application/json
+
+{
+  "name": "Flavio Araujo",
+  "email": "flavio.araujo@kaptiva.com.br"
+}
