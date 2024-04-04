@@ -3,7 +3,7 @@ import { ZodTypeProvider } from 'fastify-type-provider-zod';
 import z, { object } from 'zod';
 import { prisma } from '../lib/prisma';
 
-export function getAttendeeBadge(app: FastifyInstance) {
+export async function getAttendeeBadge(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().get(
     '/attendees/:attendeeId/badge',
     {
