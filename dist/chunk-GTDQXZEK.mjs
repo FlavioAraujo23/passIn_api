@@ -1,0 +1,21 @@
+import {
+  BadRequest
+} from "./chunk-JRO4E4TH.mjs";
+
+// src/error-handler.ts
+import { ZodError } from "zod";
+var errorHandler = (error, req, res) => {
+  if (error instanceof ZodError) {
+    return res.status(400).send({
+      message: `Error during validation`,
+      errors: error.flatten().fieldErrors
+    });
+  }
+  if (error instanceof BadRequest) {
+    return res.status(400).send(error.message);
+  }
+};
+
+export {
+  errorHandler
+};
