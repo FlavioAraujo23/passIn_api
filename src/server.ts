@@ -12,6 +12,7 @@ import { checkIn } from './routes/check-in';
 import { getEventAttendees } from './routes/get-event-attendees';
 import fastifySwagger from '@fastify/swagger';
 import fastifySwaggerUi from '@fastify/swagger-ui';
+import { errorHandler } from './error-handler';
 
 export const app = fastify();
 
@@ -41,6 +42,8 @@ app.register(getEvent);
 app.register(getAttendeeBadge);
 app.register(checkIn);
 app.register(getEventAttendees);
+
+app.setErrorHandler(errorHandler);
 
 app
   .listen({
